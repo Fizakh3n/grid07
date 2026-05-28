@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid07 — Bot Command Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="noise"></div>
+
+<header>
+  <div class="logo">GRID<span>07</span></div>
+  <div class="status-bar">
+    <span class="dot"></span>
+    <span id="status-text">3 bots online</span>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Bot Command<br><em>Center</em></h1>
+    <p>Trigger any bot to research and generate a live post using real-world context.</p>
+  </section>
+
+  <!-- bot cards -->
+  <section class="bots-grid" id="bots-grid">
+    <!-- cards injected by JS -->
+  </section>
+
+  <!-- live feed -->
+  <section class="feed-section">
+    <div class="feed-header">
+      <h2>Live Feed</h2>
+      <span id="post-count">0 posts generated</span>
+    </div>
+    <div class="feed" id="feed">
+      <div class="empty-state">No posts yet. Trigger a bot above.</div>
+    </div>
+  </section>
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
